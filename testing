@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UITC Laboratory Monitoring</title>
+    <link rel="stylesheet" type="text/css" href="ad.css">
+    <style>
+        a:hover{background-color: #fcf7f8;}
+        button:hover{color: #c51e3a;}
+    </style>
+    
+</head>   
+<body>
+
+<div id="div">
+<img src="tup.png" alt="logo"></div>
+    <div class = "div1" style="background-color: #b71921;"> 
+        <div class ="div1a">
+        <a href="equipment_devices.html" style="color: black; width: 100%;">>Equipment Devices</a>
+        </div><div class="div1a">
+        <a href="perform_request.html"  style="color:black;">>Perform Request</a> 
+        </div><div class="div1a">
+        <a href="" style="color: black;">>History</a>
+        </div><div class="div1a">
+        <a href="login.html"style="color:black;">>Logout</a>
+        </div>
+    </div>
+    
+    <div id="div2">
+        <div class="buttons"><button style="background-color: cadetblue;"><strong>Lab1</strong></button></th>
+        </div><div class=buttons>
+        <button style="background-color: rgb(22, 158, 95);"><strong>Lab2</strong></button></th>
+        </div><div class=buttons>
+        <button style="background-color: rgb(158, 156, 56);"><strong>Lab3</strong></button>
+        </div><div class=buttons>
+        <button style="background-color: rgb(156, 45, 45);"><strong>Lab4</strong></button>
+        </div>
+    </div>    
+    <div style="width:100%;border: 2px solid #ddd">
+    <table>
+        <tr>
+        <th><h3>Number of PC available per lab.</h3></th>
+        <th><input type="number"></th>
+    <div></div>
+
+
+        
+</body>
+</html>
