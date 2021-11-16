@@ -1,0 +1,43 @@
+body{
+    
+    margin: 0%;
+    padding: 0%;
+    display: normal;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: -webkit-radial-gradient(center,#ffffff,#C7232B);
+    
+
+}
+#div{
+    background: -webkit-radial-gradient(center,#ffffff,#830001);
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.div1{
+    size-adjust: 100%;
+    column-count: 4;
+    column-gap: initial;
+    max-height: 100px;
+    margin: 1.5%;
+    
+
+}
+.div1a{
+    display: inline-flexbox;
+    width: auto;
+}
+#div2{
+    size-adjust: 100%;
+    column-count: 4;
+    column-gap: initial;
+    max-height: 30px;
+}
+.buttons{
+    position: relative;
+    min-height: 30px;
+ 
+}
