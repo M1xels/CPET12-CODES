@@ -5,47 +5,353 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UITC Laboratory Monitoring</title>
-    <link rel="stylesheet" type="text/css" href="ad.css">
-    <style>
-        a:hover{background-color: #fcf7f8;}
-        button:hover{color: #c51e3a;}
-    </style>
-    
-</head>   
+    <link rel="icon" href="TUP LOGO.png">
+    <link rel="stylesheet" type="text/css" href="equipment_device.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
 <body>
 
-<div id="div">
-<img src="tup.png" alt="logo"></div>
-    <div class = "div1" style="background-color: #b71921;"> 
-        <div class ="div1a">
-        <a href="equipment_devices.html" style="color: black; width: 100%;">>Equipment Devices</a>
-        </div><div class="div1a">
-        <a href="perform_request.html"  style="color:black;">>Perform Request</a> 
-        </div><div class="div1a">
-        <a href="" style="color: black;">>History</a>
-        </div><div class="div1a">
-        <a href="login.html"style="color:black;">>Logout</a>
+  <div class="menu-bar">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#"><img src="TUP LOGO.png">UITC LABORATORY </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link " href="#">Equipment Device <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link van" href="PERFORM_REQUEST.html">
+                  Perform Request
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link van" href="RECORDS.html">
+                  Records
+                </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link van" href="LOG.html">Logout</a>
+            </li>
+          </ul>
+          
         </div>
+    </nav>
+  
+    <div class="modal fade" id="modal_l1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Insert Number of Computer in Lab 1.</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <input id="numl1" type="number"></input>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+            
+          </div>
+        </div>
+      </div>
     </div>
-    
-    <div id="div2">
-        <div class="buttons"><button style="background-color: cadetblue;"><strong>Lab1</strong></button></th>
-        </div><div class=buttons>
-        <button style="background-color: rgb(22, 158, 95);"><strong>Lab2</strong></button></th>
-        </div><div class=buttons>
-        <button style="background-color: rgb(158, 156, 56);"><strong>Lab3</strong></button>
-        </div><div class=buttons>
-        <button style="background-color: rgb(156, 45, 45);"><strong>Lab4</strong></button>
+    </body>
+    </html>
+
+    <div class="modal fade" id="modal_l2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Insert Number of Computer in Lab 2.</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <input id="numl2" type="number"></input>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+            
+          </div>
         </div>
-    </div>    
-    <div style="width:100%;border: 2px solid #ddd">
-    <table>
-        <tr>
-        <th><h3>Number of PC available per lab.</h3></th>
-        <th><input type="number"></th>
-    <div></div>
+      </div>
+    </div>
+    </body>
+    </html>
 
+    <div class="modal fade" id="modal_l3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Insert Number of Computer in Lab 3.</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <input id="numl3" type="number"></input>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    </body>
+    </html>
 
+    <div class="modal fade" id="modal_l4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal_4">Insert Number of Computer in Lab 4.</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <input id="numl4" type="number"></input>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    </body>
+    </html>
+  
+  </div>  
+  <div class="color-overlay"> </div>
+  <div id="pic" class="view drk ">
+    <div class="color-overlay"> </div>
+      <div class="container"><br><br>
+        <div class="accordion">
+          <div class="button">
+            <button class="btn" id="h1" data-toggle="collapse" data-target="#edata1" aria-expanded="true" aria-controls="edata1"  title="LAB 1"><img src="desktop-computer.png"> <br>Laboratory 1 </button>
+            <button class="btn collapsed" id="h2" data-toggle="collapse" data-target="#edata2" aria-expanded="true" aria-controls="edata1"  title="LAB 2"><img src="desktop-computer.png"> <br>Laboratory 2 </button> 
+            <button class="btn collapsed" id="h3" data-toggle="collapse" data-target="#edata3" aria-expanded="true" aria-controls="edata3"  title="LAB 3"><img src="desktop-computer.png"> <br>Laboratory 3 </button>        
+            <button class="btn collapsed" id="h4" data-toggle="collapse" data-target="#edata4" aria-expanded="true" aria-controls="edata4"  title="LAB 4"><img src="desktop-computer.png"> <br>Laboratory 4 </button> 
+          </div>
         
+          <div id="edata1" class="collapse show" aria-labelledby="h1" data-parent="#accordion">
+            <div class="table-responsive">
+              <div class="card-header">
+                LABORATORY 1 <br></br>
+                <button data-toggle="modal" data-target="#modal_l1" class="btn" title="Setup">Setup</button>
+              </div>
+              <div class="card-body">
+                <table class="table table-striped" id="tbl_lab1">
+                  <thead class="thead">
+                    <tr>
+                      <th scope="col">PC no.</th>
+                      <th scope="col">System Unit</th>
+                      <th scope="col">Monitor</th>
+                      <th scope="col">Keyboard</th>
+                      <th scope="col">Mouse</th>
+                      <th scope="col">AVR</th>
+                      <th scope="col">Remarks</th>
+    
+                    </tr>
+                  </thead>
+                  <tbody class="table">
+                    <tr id="row_data">
+                      <th scope="row">1</th>
+                      <td> <input type="checkbox"></td>
+                      <td> <input type="checkbox"></td>
+                      <td> <input type="checkbox"></td>
+                      <td> <input type="checkbox"></td>
+                      <td> <input type="checkbox"></td>
+                      <td> 
+                        <select class="form-control form-control-sm">
+                          <option>Good</option>
+                          <option>Replace</option>
+                          <option>On-Process</option>
+                        </select>
+                      </td>
+                      
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td>
+                        <button type="button" class="btn btn-lg">Save</button>
+                      </td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div id="edata2" class="collapse" aria-labelledby="h2" data-parent="#accordion">
+            <div class="table-responsive">
+              <div class="card-header">
+                LABORATORY 2 <br></br>
+                <button data-toggle="modal" data-target="#modal_l2" class="btn btn-lg" title="Setup">Setup</button>
+              </div>
+              <div class="card-body">
+                <table class="table table-striped" id="tbl_lab2">
+                  <thead class="thead">
+                    <tr>
+                      <th scope="col">PC no.</th>
+                      <th scope="col">System Unit</th>
+                      <th scope="col">Monitor</th>
+                      <th scope="col">Keyboard</th>
+                      <th scope="col">Mouse</th>
+                      <th scope="col">AVR</th>
+                      <th scope="col">Remarks</th>
+
+                    </tr>
+                  </thead>
+                  <tbody class="table-color">
+                    <tr id="row_data">
+                      <th scope="row">1</th>
+                      <td> <input type="checkbox"></td>
+                      <td> <input type="checkbox"></td>
+                      <td> <input type="checkbox"></td>
+                      <td> <input type="checkbox"></td>
+                      <td> <input type="checkbox"></td>
+                      <td> 
+                        <select class="form-control form-control-sm">
+                          <option>Good</option>
+                          <option>Replace</option>
+                          <option>On-Process</option>
+                        </select>
+                      </td>
+                      
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td>
+                        <button type="button" class="btn btn-lg">Save</button>
+                      </td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div id="edata3" class="collapse" aria-labelledby="h3" data-parent="#accordion">
+            <div class="table-responsive">
+              <div class="card-header">
+                LABORATORY 3 <br></br>
+                <button data-toggle="modal" data-target="#modal_l3" class="btn btn-lg" title="Setup">Setup</button>
+              </div>
+              <div class="card-body">
+                <table class="table table-striped" id="tbl_lab3">
+                  <thead class="thead">
+                    <tr>
+                      <th scope="col">PC no.</th>
+                      <th scope="col">System Unit</th>
+                      <th scope="col">Monitor</th>
+                      <th scope="col">Keyboard</th>
+                      <th scope="col">Mouse</th>
+                      <th scope="col">AVR</th>
+                      <th scope="col">Remarks</th>
+
+                    </tr>
+                  </thead>
+                  <tbody class="table-color">
+                    <tr id="row_data">
+                      <th scope="row">1</th>
+                      <td> <input type="checkbox"></td>
+                      <td> <input type="checkbox"></td>
+                      <td> <input type="checkbox"></td>
+                      <td> <input type="checkbox"></td>
+                      <td> <input type="checkbox"></td>
+                      <td> 
+                        <select class="form-control form-control-sm">
+                          <option>Good</option>
+                          <option>Replace</option>
+                          <option>On-Process</option>
+                        </select>
+                      </td>
+
+                      
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td>
+                        <button type="button" class="btn btn-lg">Save</button>
+                      </td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div id="edata4" class="collapse" aria-labelledby="h4" data-parent="#accordion">
+            <div class="table-responsive">
+              <div class="card-header">
+                LABORATORY 4 <br></br>
+                <button data-toggle="modal" data-target="#modal_l4" class="btn btn-lg" title="Setup">Setup</button>
+              </div>
+              <div class="card-body">
+                <table class="table table-striped" id="tbl_lab4">
+                  <thead class="thead">
+                    <tr>
+                      <th scope="col">PC no.</th>
+                      <th scope="col">System Unit</th>
+                      <th scope="col">Monitor</th>
+                      <th scope="col">Keyboard</th>
+                      <th scope="col">Mouse</th>
+                      <th scope="col">AVR</th>
+                      <th scope="col">Remarks</th>
+
+                    </tr>
+                  </thead>
+                  <tbody class="table-color">
+                    <tr id="row_data">
+                      <th scope="row">1</th>
+                      <td> <input type="checkbox" ></td>
+                      <td> <input type="checkbox"></td>
+                      <td> <input type="checkbox"></td>
+                      <td> <input type="checkbox"></td>
+                      <td> <input type="checkbox"></td>
+                      <td> 
+                        <select class="form-control form-control-sm">
+                          <option>Good</option>
+                          <option>Replace</option>
+                          <option>On-Process</option>
+                        </select>
+                      </td>
+                      
+                      
+                      
+                    </tr>
+                  </tbody>
+                  <tfoot >
+                    <tr>
+                      <td>
+                        <button type="button" class="btn btn-lg">Save</button>
+                      </td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+          </div>
+  
+  
+        </div>
+      </div>
+  
+
+
 </body>
 </html>
