@@ -31,12 +31,10 @@ body{
     margin-top: 2px;
     margin-right: 20px;
     color: white;
-    font-size: 14px;
+    font-size: 20px;
 }
 .navbar{
-    background-color:rgb(0, 49, 26)
-
-    ! important;
+    background-color:rgb(0, 49, 26)! important;
     z-index: 2;
 }
 .navbar .navbar-nav li a{
@@ -61,7 +59,6 @@ body{
 .navbar .nav-item .dropdown-menu .dropdown-item:hover{
     color : rgb(0, 0, 0)! important;
     background-color: rgb(255, 255, 255);
-    
     border: 1px solid #fff;
     border-radius:.5cm;
     opacity: 1;
@@ -92,16 +89,14 @@ body{
     z-index: 1;
     
 }
-
 .btn:hover{
     font-weight: 600;
     border: 1px solid #fff;
-    background-color: #1b412dcc;
+    background-color: #47bba2;
     transition: .2s ease-in;
-    
 }
 .btn{
-    background-color:#0c790e;
+    background-color:#720000;
     color:white;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width:1px;
@@ -110,9 +105,16 @@ body{
     border-radius:1cm;
     border: 1px solid #fff;
     border-width: auto;
-    width: 240px;
     
     
+}
+
+.card-body{
+    border-radius:1cm; 
+}
+.card-body{
+    background-color:#039935;
+    border-radius:1cm;
 }
 
 
@@ -127,7 +129,7 @@ body{
 .card-title{
     color:rgb(0, 0, 0);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
+    font-size: 12;
 }
 
 .card-text{
@@ -140,6 +142,14 @@ body{
     float: right;
 }
 
+.bt1{
+    padding-left: .2cm;
+}
+.hah{
+    float: right;
+    padding-left: .2cm;
+}
+
 /********************************************************************************************BACKGROUND AND OVERLAY***************************************************************************************************************************/
 
 html,
@@ -147,16 +157,19 @@ body,
 header,
 
 
-
+#pic{height: 100%;
+    
+}
 #pic{
-    background-image: url("TUP BG DARK.png");
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: url("TUP BG DARK.png")no-repeat center center fixed;
+    background-size: cover;
     -webkit-background-size:cover;
     -moz-background-size:cover;
     -o-background-size:cover;
-    background-size:cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    position:relative;
+
 }
 .view {
     background: #000 url("TUP BG DARK.png");
@@ -207,6 +220,7 @@ header,
 .white{
     color:#fff;
 }
+
 
 
 /********************************************************************************************adjust***************************************************************************************************************************/
@@ -307,6 +321,12 @@ header,
        
         
     }
+    .m{
+        font-size: 1px;
+        width: 80px;
+        height: 40px;
+    }
+       
 
        
 }
@@ -355,12 +375,11 @@ header,
         width: 80px;
         height: 40px;
     }
-}
         
    
 
     
-
+}
 
 
 
@@ -489,9 +508,8 @@ header,
         width: 80px;
         height: 40px;
     }
+
 }
-
-
 
 
 
