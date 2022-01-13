@@ -7,6 +7,7 @@
     <title>UITC Laboratory Monitoring</title>
     <link rel="icon" href="TUP LOGO.png">
     <link rel="stylesheet" type="text/css" href="sw.css">
+    <script src="softw.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -91,8 +92,8 @@
             Do you really want to submit this report?
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Yes</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="cancel2()">Cancel</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="submit()">Yes</button>
           </div>
         </div>
       </div>
@@ -116,41 +117,30 @@
             <form>
               <div class="form-row">
                   <div class="col-5 p-1">
-                    <input type="text" class="form-control" placeholder="Input Name">
+                    <input type="text" class="form-control" placeholder="Input Name" id="name1"> 
                   </div>
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Type of Concern
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="">Request</a>
-                        <a class="dropdown-item" href="">Complain</a>
-                        <a class="dropdown-item" href="">Suggest</a>
-                        <a class="dropdown-item" href="">Others</a>
-                    </div>
+                  <div class="col-2 p-1">
+                    <select class="form-control form-control-sm " id="list1" value="Select type of letter" onChange="number_function (this.value, this.defaultValue)" > 
+                      <option value="default">Select type of letter</option>
+                      <option>Request</option>
+                      <option>Complain</option>
+                      <option>Suggest</option>
+                      <option>Others</option>
+                    </select>
                   </div>
-                  <div class="btn-group bt1">
-                    <button type="button " class="btn btn-secondary dropdown-toggle  " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Lab No.
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="">Laboratory 1</a>
-                        <a class="dropdown-item" href="">Laboratory 2</a>
-                        <a class="dropdown-item" href="">Laboratory 3</a>
-                        <a class="dropdown-item" href="">Laboratory 4</a>
-                    </div>
+                  
+                  <div class="col-2 p-1">
+                    <select class="form-control form-control-sm " id="list2">
+                      <option value="default">Laboratory #</option>
+                      <option>Laboratory 1</option>
+                      <option>Laboratory 2</option>
+                      <option>Laboratory 3</option>
+                      <option>Laboratory 4</option>
+                    </select>
                   </div>
-                  <div class="btn-group bt1">
-                    <button type="button " class="btn btn-warning dropdown-toggle  " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        PC No.
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="">PC 1</a>
-                        <a class="dropdown-item" href="">PC 2</a>
-                        <a class="dropdown-item" href="">PC 3</a>
-                        <a class="dropdown-item" href="">PC 4</a>
-                        
-                    </div>
+                  
+                  <div class="col-1 p-1">
+                    <input type="number" min="0" max="50" class="form-control" placeholder="PC #" id="PCnum">
                   </div>
                   
                 
@@ -159,7 +149,7 @@
               
           </div>
           <div class="form-floating">
-            <textarea class="form-control"  placeholder="Leave a comment here" rows="10" id="floatingTextarea2" style="height: 350px"></textarea>
+            <textarea class="form-control"  placeholder="Leave a comment here" rows="10" id="textarea1" style="height: 350px" ></textarea>
             <label for="floatingTextarea2">Comments</label>
           </div>
           <p class="card-text">Check it properly before you send it.</p>
@@ -170,7 +160,7 @@
           <button type="button" class="btn btn-primary hah m" data-toggle="modal" data-target="#dom">
             Submit Report
           </button>
-          <button type="button" class="btn btn-danger hah m">
+          <button type="button" class="btn btn-danger hah m"  onclick="cancel1()">
             Cancel
           </button>
         </div>

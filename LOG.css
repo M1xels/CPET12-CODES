@@ -63,6 +63,21 @@ body{
     padding-top:50px ;
 
 }
+/*.login #pass_error,
+.login #email_error{
+    margin-top: 5px;
+    width: 345px;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 1px solid #EF9A9A;
+    place-items: center;
+    place-content: center; 
+    
+
+}*/
+    
 
 
 
@@ -113,6 +128,19 @@ body{
     
     
 }
+.pic{
+    width: 20px;
+    height: 20px;
+    color: #000;
+}
+#eyes:hover{
+    background-color: hsla(148, 42%, 18%, 0.8);
+    transition: .2s ease-in;
+    color: #720000;
+}
+
+
+
 
 
 
@@ -190,8 +218,9 @@ header,
 
 
 
+
 /*size1*/
-@media only screen and (max-width: 1380px)  {
+@media screen and (max-width: 1380px)  {
     img{
         border-bottom-left-radius: 1cm ;
         
@@ -236,7 +265,7 @@ header,
 
 
 /*size2*/
-@media only screen and (max-width: 991px) {
+@media  screen and (max-width: 991px) {
     img{
         border-bottom-left-radius: 0cm;
         border-top-right-radius: 1cm ;
@@ -283,7 +312,7 @@ header,
 
 
 /*size3*/
-@media only screen and (max-width: 727px) {
+@media  screen and (max-width: 727px) {
     img{
         border-bottom-left-radius: 0cm;
         border-top-right-radius: 1cm ;
@@ -312,7 +341,7 @@ header,
 
 
 /*size4*/
-@media only screen and (max-width: 525px) {
+@media  screen and (max-width: 525px) {
     img{
         border-bottom-left-radius: 0cm;
         border-top-right-radius: 1cm ;
@@ -352,7 +381,7 @@ header,
 
 
 /*size5*/
-@media only screen and (max-width: 435px) {
+@media  screen and (max-width: 435px) {
     img{
         border-bottom-left-radius: 0cm;
         border-top-right-radius: 1cm ;
@@ -427,7 +456,7 @@ header,
 
 
 /*size6 special case************************************************************/
-@media only screen and (max-height: 519px) {
+@media screen and (max-height: 519px) {
     img{
         border-bottom-left-radius: 0cm;
         border-top-right-radius: 1cm ;
